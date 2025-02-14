@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import api from "../api";
 import Note from "../components/Note"
+import '../styles/home.css'
 
 
 function Home() {
@@ -53,7 +54,7 @@ function Home() {
     return (
         <div>
             <div>
-                <h2>Notes</h2>
+                <h2>Note Book</h2>
                 {notes.map((note) => (
                     <Note note={note} onDelete={deleteNote} key={note.id} />
                 ))}
