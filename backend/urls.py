@@ -21,7 +21,7 @@ from api import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('api/user/register',views.CreateUserView.as_view(),name='register'),
+    path('api/user/register/',views.CreateUserView.as_view(),name='register'),
     path('api/token/',TokenObtainPairView.as_view(),name='get-token'),
     path('api/refresh/',TokenRefreshView.as_view(),name='refresh-token'),
     path('api_auth/',include('rest_framework.urls')),

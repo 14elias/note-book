@@ -1,3 +1,38 @@
-.env
-db.sqlite3
+# Byte-compiled / temporary files
+__pycache__/
+*.py[cod]
+*.swp
+*.swo
+
+# Virtual environment
+venv/
 env/
+*.venv
+
+# Environment variables / secrets
+.env
+*.env
+config/settings/local.py
+config/settings/production.py
+
+# Database
+db.sqlite3
+*.sqlite3
+
+# Media & Static files (if using local storage)
+media/
+staticfiles/
+
+# Logs & Debugging
+logs/
+*.log
+*.out
+
+# VS Code / PyCharm / OS Files
+.vscode/
+.idea/
+.DS_Store
+
+# Migrations (optional, only exclude if you want fresh migrations)
+**/migrations/*.py
+!**/migrations/__init__.py
